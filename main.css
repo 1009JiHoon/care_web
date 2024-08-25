@@ -2,13 +2,14 @@ body {
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    height: 2000px;
 }
 
 header {
+    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 9;
 }
 
 .inner {
@@ -197,4 +198,42 @@ header .main-menu .item .item__contents .contents__list > ul li > ul {
 header .main-menu .item .item__contents .contents__list > ul li > ul li {
     padding: 5px 0;
     color: aquamarine;
+}
+
+.visual {
+    background-size: cover;
+    background-image: url(./images/vis_bg.png);
+}
+
+.visual > .inner {
+    margin-top: 120px;
+    height: 646px;
+}
+
+.visual .image1 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 60px;
+    left: 90px;
+}
+
+.visual .image2 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 0px;
+    right: -30px;
+}
+
+.visual .text {
+    position: absolute;
+    width: 800px;
+    height: 700px;
+    top: -450px;
+    left: -100px;
+}
+
+.fade-in {
+    opacity: 0;
 }
