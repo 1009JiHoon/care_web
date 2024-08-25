@@ -12,6 +12,11 @@ header {
     z-index: 9;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .inner {
     position: relative;
     width: 1200px;
@@ -234,6 +239,36 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
     left: -100px;
 }
 
+.visual .btn.btn--green {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
 .fade-in {
     opacity: 0;
+}
+
+.btn {
+    width: 150px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.btn.btn--green {
+    color: black;
+    border-color: black;
+}
+
+.btn.btn--green:hover {
+    color: greenyellow;
+    background-color: black;
 }
