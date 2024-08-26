@@ -310,6 +310,17 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
     width: 30%;
     background-color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notice .inner__right h2 {
+    margin-right: 20px;
+}
+
+.notice .inner__right .material-icons {
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .notice .inner__left h2 {
@@ -339,4 +350,86 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.promotion {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
+}
+
+.promotion .swiper {
+    width: calc(700px * 3 + 10px * 2);
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.promotion .swiper-slide img {
+    width: 700px;
+    height: 450px;
+}
+
+.promotion .swiper-slide {
+    position: relative;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.promotion .swiper-slide-active {
+    opacity: 1;
+}
+
+.promotion .swiper-slide .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.promotion .swiper-pagination {
+    bottom: 15px !important;
+}
+
+.promotion .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+}
+
+.promotion .swiper-pagination-bullet-active {
+    background-image: url(./images/promotion_slide_pager_on.png);
+    background-color: transparent;
+}
+
+.promotion .swiper-button-prev::after, .promotion .swiper-button-next::after{
+    display: none;
+}
+
+.promotion .swiper-button-prev, .promotion .swiper-button-next {
+    color: black;
+    width: 42px;
+    height: 42px;
+    border: 2px solid black;
+    border-radius: 50%;
+    top: 82%;
+}
+
+.promotion .swiper-button-prev:hover, .promotion .swiper-button-next:hover {
+    color: white;
+    background-color: black;
+}
+
+.promotion .swiper-button-prev {
+    left: 28%;
+}
+
+.promotion .swiper-button-next {
+    right: 28%;
+}
+
+.promotion.hide {
+    height: 0;
 }
