@@ -233,16 +233,16 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
 
 .visual .text {
     position: absolute;
-    width: 800px;
-    height: 700px;
-    top: -450px;
+    width: 900px;
+    height: 800px;
+    top: -550px;
     left: -100px;
 }
 
 .visual .btn.btn--green {
     position: absolute;
-    top: 100px;
-    left: 200px;
+    top: 80px;
+    left: 250px;
 }
 
 .fade-in {
@@ -271,4 +271,72 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
 .btn.btn--green:hover {
     color: greenyellow;
     background-color: black;
+}
+
+.notice {
+    position: relative;
+}
+
+.notice .bg-left {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+}
+
+.notice .bg-right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+.notice > .inner {
+    display: flex;
+    height: 62px;
+}
+
+.notice .inner__left {
+    width: 70%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice .inner__right {
+    width: 30%;
+    background-color: white;
+    display: flex;
+}
+
+.notice .inner__left h2 {
+    color: white;
+    margin-right: 20px;
+}
+
+.notice .inner__left .swiper {
+    flex-grow: 1;
+    height: 62px;
+}
+
+.notice .inner__left .notice_button {
+    width: 62px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.notice .inner__left .notice_button .material-icons {
+    color: white;
+    font-size: 30px;
+}
+
+.notice .inner__left .swiper-slide {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
