@@ -72,3 +72,27 @@ promotionBtn.addEventListener('click', function(){
         promotionEl.classList.add('hide');
     }
 });
+
+gsap.to('.float_1', 2, {
+    delay : 1,
+    repeat : -1,
+    yoyo : true,
+    x : 60,
+    rotation : 22
+});
+
+gsap.to('.float_2', 2, {
+    delay : 1,
+    repeat : -1,
+    yoyo : true,
+    x : -60,
+    rotation : 22
+});
+
+gsap.to('.float_3', 2, {
+    delay : 1,
+    repeat : -1,
+    yoyo : true,
+    y : 60,
+    rotation : 22
+});

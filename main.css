@@ -24,7 +24,7 @@ a {
 }
 
 header > .inner {
-    background-color: aquamarine;
+    background-color: rgb(227, 255, 185);
     height: 120px;
 }
 
@@ -432,4 +432,134 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
 
 .promotion.hide {
     height: 0;
+}
+
+.rewards {
+    position: relative;
+}
+
+.rewards .inner {
+    height: 220px;
+}
+
+.rewards .bg-left {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 0;
+    background-color: rgb(227, 255, 185);
+}
+
+.rewards .bg-right {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    right: 0;
+    background-color: #f0f5eb;
+}
+
+.rewards .rew_1 {
+    top: -135px;
+    left: -130px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.rewards .rew_2 {
+    top: -135px;
+    left: 380px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.rewards .btn-group {
+    position: absolute;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+}
+
+.rewards .btn-group .sign-up {
+    width: 140px;
+    margin-right: 10px;
+}
+
+.rewards .btn-group .sign-in {
+    width: 100px;
+}
+
+.rewards .btn-group .get-rewards {
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.btn.btn--reverse {
+    color: white;
+    background-color: black;
+}
+
+.btn.btn--reverse:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.youtube {
+    position: relative;
+    height: 700px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.youtube .youtube_area {
+    --width : 1920px;
+    position: absolute;
+    width: var(--width);
+    height: calc(var(--width) * 9 / 16);
+    top: 50%;
+    left: 50%;
+    margin-left: calc(var(--width) / -2);
+    margin-top: calc(var(--width) * 9 / 16 / -2);
+}
+
+.youtube .youtube_cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/video_cover_pattern.png);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#player {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.youtube .float_1 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 20px;
+    left: -20px;
+}
+
+.youtube .float_2 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 280px;
+    left: 240px;
+}
+
+.youtube .float_3 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 500px;
+    left: 920px;
 }
