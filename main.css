@@ -556,10 +556,146 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
     left: 240px;
 }
 
-.youtube .float_3 {
+.section-event .float_3 {
     position: absolute;
     width: 180px;
     height: 180px;
-    top: 500px;
+    top: -150px;
     left: 920px;
+}
+
+.section-event {
+    background-image: url(./images/event_img1.png);
+}
+
+.section-event .inner{
+    height: 400px ;
+}
+
+.section-shop {
+    background-image: url(./images/shop_img1.png);
+    background-size: cover;
+}
+
+.section-shop .inner{
+    height: 450px ;
+}
+
+.section-3d {
+    background-image: url(./images/3d_img1.png);
+    background-size: cover;
+}
+
+.section-3d .inner{
+    height: 600px ;
+}
+
+.section-king {
+    background-image: url(./images/king_img1.png);
+    background-size: cover;
+}
+
+.section-king .inner{
+    height: 500px ;
+}
+
+.section-event .event_img2 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: -10px;
+    left: 40px;
+}
+
+.section-event .event_des {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    right: 250px;
+    top: 30px;
+}
+
+.section-event .btn {
+    position: absolute;
+    bottom: 100px;
+    right: 360px;
+}
+
+.section-shop .shop_img2 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: -10px;
+    left: 40px;
+}
+
+.section-shop .shop_des {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    right: 250px;
+    top: 30px;
+}
+
+.section-shop .btn {
+    position: absolute;
+    bottom: 120px;
+    right: 360px;
+}
+
+.section-king .king_img2 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: -10px;
+    left: 40px;
+}
+
+.section-king .king_des {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    right: 250px;
+    top: 30px;
+}
+
+.section-king .btn {
+    position: absolute;
+    bottom: 160px;
+    right: 360px;
+}
+
+.back-to-position {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.back-to-position.to-left {
+    transform: translateX(150px);
+}
+
+.back-to-position.to-right {
+    transform: translateX(-150px);
+}
+
+.show .back-to-position {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.show .back-to-position.deg {
+    opacity: 1;
+    transform: translateX(0) rotate(3deg);
+}
+
+.back-to-position.delay-1 {
+    transition-delay: .3s;
+}
+
+.back-to-position.delay-2 {
+    transition-delay: .6s;
+}
+
+.back-to-position.delay-3 {
+    transition-delay: .9s;
 }
