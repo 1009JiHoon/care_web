@@ -588,6 +588,47 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
 
 .section-3d .inner{
     height: 600px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3d .medal {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 600px;
+}
+
+.section-3d .medal .back_plane {
+    position: absolute;
+    transition: 1.5s;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.section-3d .medal .back_plane .btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 350px;
+}
+
+.section-3d .medal .front_plane {
+    position: absolute;
+    transition: 1.5s;
+}
+
+.section-3d .medal:hover .back_plane {
+    transform: rotateY(0);
+}
+
+.section-3d .medal:hover .front_plane {
+    transform: rotateY(-180deg);
 }
 
 .section-king {
@@ -698,4 +739,14 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
 
 .back-to-position.delay-3 {
     transition-delay: .9s;
+}
+
+.back {
+    width: 500px;
+    height: 500px;
+}
+
+.front {
+    width: 300px;
+    height: 300px;
 }
