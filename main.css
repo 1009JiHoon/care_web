@@ -750,3 +750,177 @@ header .main-menu .item .item__contents .contents__list > ul li > ul li {
     width: 300px;
     height: 300px;
 }
+
+.A_slide {
+    height: 100px;
+    width: 200px;
+}
+
+footer {
+    background-image: url(./images/footer_bg.png);
+    overflow: hidden;
+}
+
+footer .inner {
+    padding: 20px 0;
+}
+
+footer .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+footer .swiper-button-prev,
+footer .swiper-button-next{
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer .swiper-button-prev::after,
+footer .swiper-button-next::after {
+    display: none;
+}
+
+footer .swiper-button-prev:hover,
+footer .swiper-button-next:hover {
+    background-color: white;
+}
+
+footer .swiper-button-prev {
+    left: -50px;
+}
+
+footer .swiper-button-next {
+    right: -50px;
+}
+
+footer .sep {
+    width: 100%;
+    height: 2px;
+    background-color: #555;
+    opacity: .5;
+    margin: 20px 0;
+}
+
+footer .footerBox {
+    display: flex;
+    height: 200px;
+}
+
+.logo_ {
+    position: absolute;
+    top: 230px;
+    width: 80px;
+    height: 80px;
+}
+
+.rew_2 {
+    position: absolute;
+    top: 80px;
+    height: 380px;
+    width: auto;
+    left: 0px;
+}
+
+.BOX_A {
+    margin-left: 310px;
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.BOX_B {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BOX_A .L-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.BOX_A .L-1 p {
+    position: relative;
+    padding: 5px 10px;
+}
+
+.BOX_A .L-1 p::before {
+    opacity: .5;
+    content: '';
+    background-color: #555;
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateX(-9px);
+}
+
+.BOX_A .L-1 p:first-child::before {
+    display: none;
+}
+
+.BOX_A .copyright {
+    margin-top: 10px;
+}
+
+.share_img {
+    width: 50px;
+    height: 50px;
+}
+
+.BOX_B .service_BTN {
+    width: 220px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BOX_B .service_BTN p {
+    margin-left: 10px;
+}
+
+.BOX_B .service_BTN .bar {
+    flex-grow: 1;
+}
+
+.BOX_B .service_BTN .material-icons {
+    width: 30px;
+    height: 30px;
+}
+
+#to-top {
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#to-top:hover {
+    background-color: black;
+    color: white;
+}
